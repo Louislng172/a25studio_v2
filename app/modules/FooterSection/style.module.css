@@ -1,67 +1,55 @@
-.footerSection * {
-    color:var(--white);
-}
-.content {
-    padding: 5vw 0;
-}
-.content h3 {
-    font-family: "Inter-Bold";
-    font-family: var( --font1-500);
-    font-size: var(--font-s-h3);
-    line-height: var(--font-lh-h3);
-    letter-spacing: var(--font-ls-h3);
 
-    background: var(--gradienttit);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.footerSection{
+    border: 1px solid green;
 }
-.list li {
-    font-family: var( --font2-300);
-    font-size: var(--font-s-p);
-    line-height: var(--font-lh-p);
-    letter-spacing: var(--font-ls-p);
+.layout_footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2vw 0 ;
+}
+.node1,.node2 {
+    padding-bottom: 10vw;
+}
+.node1 {
    
-}
-.form {
     display: flex;
 }
-.form h4 {
-    font-family: "Inter-Medium";
-    font-family: var( --font1-400);
-    font-size: var(--font-s-h4);
-    line-height: var(--font-lh-h4);
-    letter-spacing: var(--font-ls-h4);
-}
-
-@media (min-width:601px) {
-    .container {
-        margin: 0 8vw;
-    }
-    .content {
-        display:grid;
-        grid-template-columns: repeat(12,1fr);
-    }
+.node1 > *:not(:first-child),.node3 > *:not(:first-child) {
     
-    .col1 {grid-column: 1/4;}
-    .col2 {grid-column: 4/6;}
-    .col3 {grid-column: 6/13;}
-    .list li {
-        margin-top: 1rem;
-    }
-    .canvas {
-        width: 100%;
-        height: 70%;
-        background: var(--gray);
-    }
-    .form {
-        height: 30%;
-        display: flex;
-        align-items: center;
-    }
-    .form input {
-        width: 70%; 
-        height: 70%;
-        border-radius: var(--radius-all);
-        padding-left:2rem;
-    }
 }
+.node1 > *,.node3 > * {
+    padding-right: 2rem;
+}
+.node1 > a,
+.node4 *{
+    font-size: var(--font-s-p-medium);
+    line-height: var(--font-lh-p-medium);
+    letter-spacing: var(--font-ls-p-medium);
+}
+.node1,.node2,.node3,.node4{
+    width: 50%;
+    height: fit-content;
+}
+.node3{
+    display: flex;
+    align-self: self-end;
+
+}
+.node4 { 
+    display: flex;
+    justify-content: space-between;
+}
+.node4 > div {
+   
+}
+.brandName {
+
+}
+@media (max-width:472px) {}
+
+@media (min-width: 472px) and (max-width: 772px) {}
+
+@media (min-width: 772px) and (max-width: 972px) {}
+
+@media (min-width:972px) {}

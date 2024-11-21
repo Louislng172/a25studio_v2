@@ -4,6 +4,7 @@ import styles from "./styles/page.module.css";
 import HomePage from '@Page/HomePage'
 
 import Lenis from "@studio-freight/lenis";
+import FooterSection from "./modules/FooterSection";
 
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
   useEffect(() => {
     // Khởi tạo Lenis
     lenis.current = new Lenis({
-      lerp:.072
+      lerp:.072,
+      syncTouch:true
       // Cấu hình khác như tốc độ, hướng, v.v.
       // example: direction: "vertical", lerp: 0.1, smoothWheel: true, etc.
     });
@@ -40,7 +42,8 @@ export default function Home() {
      
         <HomePage />
         <footer>
-        {/*   <FooterSection /> */}
+         
+          <FooterSection />
         </footer>
       </main>
    {/*  <Canvas3d /> */}

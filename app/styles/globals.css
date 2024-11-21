@@ -1,51 +1,20 @@
 
 @font-face {
     
-  font-family: "Inter-Regular";
-  src: url('/fonts/Inter/Inter_18pt-Regular.ttf');
+  font-family: "Font-Medium";
+  src: url('/fonts/HelveticaNeueCyr/Medium.woff2');
 
 }
 @font-face {
   
-  font-family: "Inter-Medium";
-  src: url('/fonts/Inter/Inter_18pt-Medium.ttf');
+  font-family: "Font-Roman";
+  src: url('/fonts/HelveticaNeueCyr/Roman.woff2');
 
 }
-@font-face {
 
-  font-family: "Inter-Bold";
-  src: url('/fonts/Inter/Inter_18pt-Bold.ttf');
-  
-}
-
-
-@font-face {
-  
-  font-family: "PlusJakartaSans-Regular";
-  src: url('/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf');
- 
-}
-@font-face {
-  
-  font-family: "PlusJakartaSans-Medium";
-  src: url('/fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf');
-  
-}
-@font-face {
-  
-  font-family: "PlusJakartaSans-Bold";
-  src: url('/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf');
- 
-}
 :root {
 
-  /* font */
-  --font1-300 :  "Inter-Regular";
-  --font1-400 :  "Inter-Medium";
-  --font1-500 :  "Inter-Bold";
-  --font2-300 :  "PlusJakartaSans-Regular";
-  --font2-400 :  "PlusJakartaSans-Medium";
-  --font2-500 :  "PlusJakartaSans-Bold";
+
 
   /* font size */
   --font-s-h0: 10.6vw;
@@ -63,8 +32,8 @@
   --font-s-h4: 1.3vw;
   --font-lh-h4: 1.4vw;
   --font-ls-h4: 0.1vw;
-  --font-s-p: 1.01111111vw;
-  --font-lh-p: 1.10333333333vw;
+  --font-s-p: 2.01111111vw;
+  --font-lh-p: 2.10333333333vw;
   --font-ls-p: 0.0266666667vw;
 /*   --font-s-p: 1rem;
   --font-lh-p: 1.1rem;
@@ -151,22 +120,30 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  text-transform: uppercase;
 }
 
 h1,h2,h3,h4,h5 {
   font-weight: normal;
   color: var(--white);
+      
+  font-family: "Font-Medium";
 }
 p,a,span {
-  font-weight: normal;
+  margin:0;
+  padding:0;
+ 
   color: var(--white);
-  
+  font-family: "Font-Roman";
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--white);
 }
-
+a,button {
+  cursor: pointer;
+}
 ul {
   list-style-type: none;
   color: inherit;

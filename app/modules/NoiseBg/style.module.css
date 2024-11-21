@@ -1,0 +1,14 @@
+.noisebg{
+    z-index: 99999;
+    opacity: .04;
+    pointer-events: none;
+    mix-blend-mode: normal;
+    background-image: url(/noise.gif);
+    background-position: 0 0;
+    background-size: auto;
+    width: 100vw;
+    height: 100dvh;
+    position: fixed;
+    inset: 0%;
+
+}
