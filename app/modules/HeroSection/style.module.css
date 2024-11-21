@@ -1,0 +1,49 @@
+.heroSection {
+   
+   border:1px solid rgb(0, 255, 136);
+}
+
+.heroSectionWrap {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.part1,.part2 {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.node1 {
+   grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.part2 h1 {
+   text-align: center;
+ 
+}
+
+@media (max-width:472px) {
+   
+
+}
+
+
+@media (min-width: 472px) and (max-width: 772px) {
+   .heroSectionWrap {
+      height: 109vw !important;
+   }
+}
+
+@media (min-width: 772px) and (max-width: 972px) {
+
+  
+}
+
+@media (min-width:972px) {
+   
+
+}

@@ -1,0 +1,39 @@
+.aboutusWrap {
+    position: relative;
+}
+.tag {
+
+}
+.text1 {
+    grid-area: 1 / 3 / 2 / 5;
+}
+.image {
+    background-color: aqua;
+    width: 72%;
+    z-index: -1;
+    height: auto;
+    position: absolute;
+    inset: 11.85vw 0% 0%;
+}
+.text2 {
+    grid-area: 2 / 3 / 3 / 5;
+    display: flex;
+}
+.text2>p:nth-child(n) {
+    margin-left: 2.8vw;
+}
+.text2>p:nth-child(1) {
+    max-width: 27vw;
+    text-align: justify;
+}
+.text2>p:nth-child(2) {
+
+    text-align: justify;
+}
+@media (max-width:472px) {}
+
+@media (min-width: 472px) and (max-width: 772px) {}
+
+@media (min-width: 772px) and (max-width: 972px) {}
+
+@media (min-width:972px) {}

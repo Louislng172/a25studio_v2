@@ -1,0 +1,42 @@
+
+.advantagesSection {
+
+}
+.tag {
+    grid-area: 1 / 4 / 2 / 4;
+    place-self: start end;
+}
+.image {
+    display: block;
+    aspect-ratio: 1/1;
+    grid-area: span 2 / span 2 / span 2 / span 2;
+    background-color: brown;
+}
+.box {
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box_0 {
+    grid-area: 2 / 4 / 3 / 5;
+ 
+}
+.box_1 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+.box_2 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+.box_3 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+@media (max-width:472px) {}
+
+@media (min-width: 472px) and (max-width: 772px) {}
+
+@media (min-width: 772px) and (max-width: 972px) {}
+
+@media (min-width:972px) {}

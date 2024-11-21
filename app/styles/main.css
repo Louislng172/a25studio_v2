@@ -1,0 +1,51 @@
+section {
+    padding:0 2vw ;
+}
+.layout {
+    z-index: 1;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    place-items: start stretch;
+    width: 100%;
+    display: grid;
+    position: relative;
+    
+}
+.fit_layout {
+    place-items: end stretch;
+}
+.has_big_gap {
+    grid-row-gap: 24.9vw;
+}
+.padding-block {
+    padding-top: 14vw;
+    padding-bottom: 14vw;
+}
+.h1_style {
+    text-transform: uppercase;
+    font-size: var(--font-s-h0);
+    line-height: var(--font-lh-h0);
+    letter-spacing: var(--font-ls-h0);
+}
+.h2_style {
+    text-transform: uppercase;
+    font-size: var(--font-s-h2);
+    line-height: var(--font-lh-h2);
+    letter-spacing: var(--font-ls-h2);
+}
+.p_large_style {
+    text-transform: uppercase;
+    font-size: var(--font-s-p-large);
+    line-height: var(--font-lh-p-large);
+    letter-spacing: var(--font-ls-p-large);
+}
+
+.p_medium_style {
+    text-transform: uppercase;
+    font-size: var(--font-s-p-medium);
+    line-height: var(--font-lh-p-medium);
+    letter-spacing: var(--font-ls-p-medium);
+}

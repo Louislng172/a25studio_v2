@@ -1,0 +1,20 @@
+
+.introSection {
+    background-color: var(--brand-black);
+}
+.introSectionWrap {
+    position: relative;
+    display: flex;
+  
+}
+.part1,.part2 {
+    width: 50%;
+}
+
+@media (max-width:472px) {}
+
+@media (min-width: 472px) and (max-width: 772px) {}
+
+@media (min-width: 772px) and (max-width: 972px) {}
+
+@media (min-width:972px) {}

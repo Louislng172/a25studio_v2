@@ -1,0 +1,47 @@
+
+.factSection {
+    height:fit-content;
+}
+.factSectionWrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.tag {
+    padding: 1rem;
+    grid-area: span 1 / span 2 / span 1 / span 2;
+    justify-self: end;
+}
+.text {
+    padding: 1rem;
+    grid-area: span 1 / span 1 / span 1 / span 2;
+    align-self: start;
+}
+.part1,.part2 {
+    height: 50%;
+    
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.heading {
+    text-align: right;
+    padding: 1rem;
+    grid-area: span 1 / span 2 / span 1 / span 2;
+    justify-self: end;
+}
+.tagsub {
+    padding: 1rem;
+}
+@media (max-width:472px) {}
+
+@media (min-width: 472px) and (max-width: 772px) {}
+
+@media (min-width: 772px) and (max-width: 972px) {}
+
+@media (min-width:972px) {}
