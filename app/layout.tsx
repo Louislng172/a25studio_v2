@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
-import "./styles/globals.css";
-import "./styles/main.css";
+import "@Styles/globals.css";
+import "@Styles/main.css";
 import 'lenis/dist/lenis.css'
+import MainLayout from "@Page/MainLayout";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
