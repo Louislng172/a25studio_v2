@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@Styles/globals.css";
 import "@Styles/main.css";
 import 'lenis/dist/lenis.css'
-import MainLayout from "@Page/MainLayout";
+import MainLayout from "@Layouts/MainLayout";
 
 
 export const metadata: Metadata = {

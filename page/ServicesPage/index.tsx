@@ -1,6 +1,6 @@
-import AdvenServiceSection from '@/modules/AdvenServiceSection'
-import IntroServiceSection from '@/modules/IntroServiceSection'
-import PlaneServiceSection from '@/modules/PlaneServiceSection'
+import AdvenServiceSection from '@Modules/services/AdvenServiceSection'
+import IntroServiceSection from '@Modules/services/IntroServiceSection'
+import PlaneServiceSection from '@Modules/services/PlaneServiceSection'
 import React from 'react'
 
 export default function ServicesPage() {

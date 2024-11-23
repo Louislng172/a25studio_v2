@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './style.module.css'
 import Button4 from '@/components/Button4'
-export default function ContactSection() {
+export default function index() {
   return (
-    <section className={`${s.contactSection} padding-block`}>
+    <section className={`${s.formContactSection} padding-block`}>
       <div className={s.grid}>
         <p className={`${s.label} p_large_style`}>Obligation
           free your resume

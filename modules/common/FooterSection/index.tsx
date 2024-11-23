@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './style.module.css'
-export default function FooterSection() {
+export default function index() {
   return (
     <footer className={`${s.footerSection} padding-block-top padding-df bg_lv2`}>
         <div className='container'>

@@ -2,7 +2,7 @@ import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
 import SplitText from '@Components/SplitText'
-export default function IntroSection() {
+export default function index() {
   return (
     <section className={`${s.introSection} padding-block`}>
         <div className='container'>

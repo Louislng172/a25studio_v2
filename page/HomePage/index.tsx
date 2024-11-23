@@ -1,29 +1,31 @@
-"use client"
+
 import React from 'react'
-import HeroSection from '@Modules/HeroSection'
+import HeroSection from '@/modules/home/Hero'
 
-import IntroSection from '@Modules/IntroSection'
-import Advantages from '@Modules/Advantages'
-import FactSection from '@Modules/FactSection'
-import ListService from '@Modules/ListService'
-import AboutusSection from '@Modules/AboutusSection'
-import HowItWorkSection from '@Modules/HowItWorkSection'
+import IntroWelcome from '@Modules/home/IntroWelcome'
+import Advantages from '@Modules/home/Advantages'
+import Fact from '@/modules/home/Fact'
+import ListService from '@Modules/home/ListService'
+import IntroUs from '@/modules/home/IntroUs'
+import HowItWorkSection from '@/modules/home/HowItWork'
 
-import ContactSection from '@Modules/ContactSection'
+import FormContactSection from '@/modules/common/FormContact'
 
-export default function index() {
 
+
+export default function index({data}:{data?:any}) {
+ 
     return (
         <>
        
             <HeroSection />
-            <IntroSection/>
+            <IntroWelcome/>
             <Advantages/>
-            <FactSection/>
+            <Fact/>
             <ListService/>
             <HowItWorkSection/>
-            <ContactSection/>
-            <AboutusSection/>
+            <FormContactSection/>
+            <IntroUs/>
         </>
     )
 }

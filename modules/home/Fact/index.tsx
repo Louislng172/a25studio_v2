@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
-export default function FactSection() {
+export default function index() {
     return (
         <section className={s.factSection}>
             <div className='container'>

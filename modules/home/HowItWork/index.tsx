@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './style.module.css'
-export default function HowItWorkSection() {
+export default function index() {
   const data = [
     {
       name:"Submit your name",
