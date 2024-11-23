@@ -13,7 +13,7 @@ export default function MainLayout({children}:{children: React.ReactNode}) {
     <>
         <NoiseBg/>
         <NavbarSection/>
-        <div style={{height:"10vh",width:"100%",position:"relative",borderBottom:"1px solid gray"}}></div>
+        <div style={{height:"0vh",width:"100%",position:"relative",borderBottom:"1px solid gray"}}></div>
         <main>
             {children}
         </main>

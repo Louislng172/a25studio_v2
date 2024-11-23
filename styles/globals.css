@@ -15,7 +15,9 @@
 :root {
 
 
-
+  /* add */
+  --list-color_1 : #101010;
+  --list-color_2: #0c0c0c;
   /* font size */
   --font-s-h0: 10.6vw;
   --font-lh-h0: 11.6vw;
@@ -130,7 +132,7 @@ h1,h2,h3,h4,h5 {
       
   font-family: "Font-Medium";
 }
-p,a,span {
+p,a,span,button,input,textarea,ul,li {
   margin:0;
   padding:0;
  

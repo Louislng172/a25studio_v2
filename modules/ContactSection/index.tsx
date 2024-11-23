@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './style.module.css'
+import Button4 from '@/components/Button4'
 export default function ContactSection() {
   return (
     <section className={`${s.contactSection} padding-block`}>
@@ -20,27 +21,31 @@ export default function ContactSection() {
         </div>
         <div className={s.formSpace}>
           <form className={s.form}>
-            <div>
-              <label htmlFor="name">Tên:</label>
+            <div className={s.fieldName}>
+              
               <input
                 type="text"
                 id="name"
                 name="name"
-                value={"this.value"}
+                placeholder='ENTER YOUR NAME'
                 required
               />
             </div>
-            <div>
-              <label htmlFor="email">Email:</label>
+            <div className={s.fieldEmail}>
+             
               <input
                 type="email"
                 id="email"
                 name="email"
-                value={"this.value"}
+                placeholder='ENTER YOUR EMAIL'
                 required
               />
             </div>
-            <button type="submit">Gửi</button>
+            <div className={s.fieldArea}>
+              <textarea maxLength={5000} placeholder="Message"  name="field-2" data-name=""></textarea>
+            </div>
+            <Button4 styleCs={0} type='submit'>Send us</Button4>
+          
           </form>
         </div>
       </div>

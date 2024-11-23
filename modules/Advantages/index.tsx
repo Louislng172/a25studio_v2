@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
+import ImagePreload from '@/components/ImagePreload'
 export default function Advantages() {
 const data = [
     {
@@ -32,7 +33,7 @@ const data = [
                 </div>
             ))}
             <div className={s.image}>
-                
+                <ImagePreload src="/home/home2.webp" alt="home2" w='100%' h="auto" />
             </div>
         </div>
     </section>

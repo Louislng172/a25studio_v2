@@ -1,0 +1,41 @@
+
+
+.advenServiceSection {
+    border-top: 1px solid gray;
+}
+.listAdven > li {
+    margin-bottom: 8vw;
+}
+.number {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: start;
+}
+.grid_inner {
+
+    grid-area: 1 / 3 / 2 / 5;
+    justify-self: end;
+
+
+    grid-column-gap: 4vw;
+    grid-row-gap: 4vw;
+    grid-template-rows: auto auto;
+    /* grid-template-columns: 30vw 1fr; */
+    grid-auto-columns: 1fr;
+    width: 42.6vw;
+    display: grid;
+}
+
+.label {
+    grid-area: span 1 / span 2 / span 1 / span 2;
+}
+.text {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: justify;
+ 
+}
+.tag {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: end;
+
+ 
+}

@@ -2,6 +2,9 @@ import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
 export default function index() {
+  const data = {
+      
+  }
   return (
 
     <section className={s.heroSection}>

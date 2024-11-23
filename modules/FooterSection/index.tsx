@@ -2,7 +2,7 @@ import React from 'react'
 import s from './style.module.css'
 export default function FooterSection() {
   return (
-    <footer className={`${s.footerSection} padding-block-top`}>
+    <footer className={`${s.footerSection} padding-block-top padding-df bg_lv2`}>
         <div className='container'>
             <div className={s.layout_footer}>
                 <div className={s.node1}>

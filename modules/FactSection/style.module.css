@@ -1,6 +1,8 @@
 
 .factSection {
     height:fit-content;
+    background-image: url(/home/home1.webp);
+    background-position: center center;
 }
 .factSectionWrap {
     position: relative;
@@ -23,8 +25,8 @@
     height: 50%;
     
 }
-.part1,.part2 {
-    border:1px solid gray;
+.part1 {
+    
 }
 .part2 {
     

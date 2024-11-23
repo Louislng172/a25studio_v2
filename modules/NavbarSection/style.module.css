@@ -5,8 +5,18 @@
     left:0;
     width: 100%;
     z-index: 99;
+
+    padding-top: 1rem;
 }
 
+.logo {
+    grid-area: 1 / 1 / 1 / 3;
+}
+.logo h2 {
+    font-size: 3.6vw;
+    font-weight: 800;
+    letter-spacing: 0vw;
+}
 @media (max-width:472px) {}
 
 @media (min-width: 472px) and (max-width: 772px) {}

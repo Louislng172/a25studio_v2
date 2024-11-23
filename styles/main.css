@@ -22,6 +22,9 @@ section {
     display: grid;
     position: relative;
 }
+.padding-df {
+    padding:0 2vw ;
+}
 .fit_layout {
     place-items: end stretch;
 }
@@ -64,3 +67,34 @@ section {
 .has--opacity_20 {
     color: #fff3;
 }
+.bg_lv2{
+    background-color: var(--list-color_2);
+  }
+
+
+  /* button */
+  button {
+    color: var(--white);
+    background-color: unset;
+    outline: none;
+    border:unset;
+    padding: 1vw 2vw;
+  }
+  .btn_style_01 {
+    border: 1px solid gray;
+  }
+
+  .btn_style_02 {
+    border-top: 1px solid gray;
+  }
+
+  .btn_style_03 {
+    border-bottom: 1px solid gray;
+  }
+
+
+  .heading-small {
+    letter-spacing: -.03em;
+    font-size: 2.4vw;
+    line-height: 110%;
+  }

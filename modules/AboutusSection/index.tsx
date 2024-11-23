@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
+import ImagePreload from '@/components/ImagePreload'
 export default function AboutusSection() {
   return (
     <section className={`${s.aboutusSection} padding-block`}>
@@ -38,7 +39,7 @@ export default function AboutusSection() {
                         towards success.</p>
                 </div>
                 <div className={s.image}>
-
+                        <ImagePreload src="/home/home4.webp" alt="home4" w="100%" h="auto" />
                 </div>
             </div>
         </div>

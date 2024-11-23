@@ -10,7 +10,7 @@
     display: block;
     aspect-ratio: 1/1;
     grid-area: span 2 / span 2 / span 2 / span 2;
-    background-color: brown;
+
 }
 .box {
     aspect-ratio: 1/1;
