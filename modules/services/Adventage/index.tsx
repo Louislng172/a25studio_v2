@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './style.module.css'
-export default function AdvenServiceSection() {
+export default function Adventage() {
     const data = [
         {
             label: "Enhance your I-140 petition with expert consultation",

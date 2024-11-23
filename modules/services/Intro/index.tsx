@@ -2,7 +2,7 @@
 import Tag from '@/components/Tag'
 import s from './style.module.css'
 import ImagePreload from '@/components/ImagePreload'
-export default function IntroServiceSection() {
+export default function Intro() {
   return (
     <section className={s.serviceSection}>
       <div className={s.part1}>

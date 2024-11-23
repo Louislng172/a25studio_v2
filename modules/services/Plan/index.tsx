@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import Button4 from '@/components/Button4'
-export default function PlaneServiceSection() {
+export default function Plan() {
     const data = [
         {
             namePackage: "Bronze",

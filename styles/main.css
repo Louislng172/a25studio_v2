@@ -78,7 +78,6 @@ section {
     background-color: unset;
     outline: none;
     border:unset;
-    padding: 1vw 2vw;
   }
   .btn_style_01 {
     border: 1px solid gray;
@@ -97,4 +96,8 @@ section {
     letter-spacing: -.03em;
     font-size: 2.4vw;
     line-height: 110%;
+  }
+
+  .word {
+    overflow: hidden;
   }

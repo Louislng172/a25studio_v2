@@ -1,5 +1,5 @@
-import Lenis from '@studio-freight/lenis';
 
+import Lenis from 'lenis'
 declare global {
   interface Window {
     lenis?: Lenis | null;

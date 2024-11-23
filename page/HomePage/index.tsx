@@ -18,7 +18,6 @@ export default function index({data}:{data?:any}) {
  
     return (
         <>
-       
             <HeroSection />
             <IntroWelcome/>
             <Advantages/>

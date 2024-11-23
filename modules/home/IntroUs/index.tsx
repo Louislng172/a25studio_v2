@@ -3,6 +3,7 @@ import s from './style.module.css'
 import Tag from '@Components/Tag'
 import ImagePreload from '@/components/ImagePreload'
 export default function index() {
+    
   return (
     <section className={`${s.aboutusSection} padding-block`}>
         <div className={s.aboutusWrap}>

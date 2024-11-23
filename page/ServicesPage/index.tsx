@@ -1,14 +1,15 @@
-import AdvenServiceSection from '@Modules/services/AdvenServiceSection'
-import IntroServiceSection from '@Modules/services/IntroServiceSection'
-import PlaneServiceSection from '@Modules/services/PlaneServiceSection'
+import Adventage from '@/modules/services/Adventage'
+import Intro from '@Modules/services/Intro'
+import Plan from '@Modules/services/Plan'
 import React from 'react'
-
+import FormContactSection from '@/modules/common/FormContact'
 export default function ServicesPage() {
   return (
     <>
-      <IntroServiceSection/>
-      <AdvenServiceSection/>
-      <PlaneServiceSection/>
+      <Intro/>
+      <Adventage/>
+      <Plan/>
+      <FormContactSection/>
     </>
   )
 }
