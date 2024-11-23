@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import {  isMobileAndTablet } from "@/utils/responsive";
 export default function initLenis() {
-    const lenis = useRef<Lenis>(); // Tạo tham chiếu cho Lenis
+    if(isMobileAndTablet()) return
+    const lenis = useRef<Lenis>(); 
     console.log("initLenis")
     useEffect(() => {
         lenis.current = new Lenis({
@@ -20,6 +22,9 @@ export default function initLenis() {
         return () => {
             if (lenis.current) {
                 lenis.current.destroy();
+            }
+            if(window.lenis) {
+                window.lenis = null
             }
         };
     }, []);

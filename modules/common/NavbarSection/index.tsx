@@ -2,7 +2,8 @@ import React from 'react'
 import s from './style.module.css'
 import Link from 'next/link'
 
-export default function index() {
+export default function index({content}:{content?:any}) {
+
   return (
     <section className={s.navbarSection}>
         <div className='layout'>

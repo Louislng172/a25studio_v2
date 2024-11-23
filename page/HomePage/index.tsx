@@ -13,6 +13,7 @@ import FormContactSection from '@/modules/common/FormContact'
 
 
 
+
 export default function index({data}:{data?:any}) {
  
     return (
