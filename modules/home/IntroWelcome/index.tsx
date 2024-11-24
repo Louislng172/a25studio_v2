@@ -2,11 +2,13 @@ import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
 import SplitText from '@Components/SplitText'
+import BackgroundCrossIcon from '@/components/BackgroundCrossIcon'
 export default function index() {
 
 
   return (
     <section className={`${s.introSection} padding-block`}>
+        <BackgroundCrossIcon/>
         <div className='container'>
             <div className={s.introSectionWrap}>
                 <div className={s.part1}>

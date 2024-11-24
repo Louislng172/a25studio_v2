@@ -2,6 +2,7 @@ import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
 import ParagraphChars from '@/interactive/Paragraph/Char'
+import BackgroundLineCross from '@/components/BackgroundLineCross'
 
 
 export default function index() {
@@ -9,6 +10,7 @@ export default function index() {
   return (
 
     <section className={s.heroSection}>
+      <BackgroundLineCross/>
       <div className='container'>
         <div className={s.heroSectionWrap}>
           <div className={s.part1}>

@@ -1,21 +1,22 @@
 import React from 'react'
 import s from './style.module.css'
+import IconArrow from '@/components/Icon/Arrow'
 export default function index() {
   const data = [
     {
-      name:"Submit your name",
-      des:"Share your resume with us through our secure submission portal."
+      name:["Submit Your","Resume"],
+      des:"Share your resume with us throu resume with us throu resume with us throu resume with us through our secure submission portal."
     },
     {
-      name:"Submit your name",
-      des:"Share your resume with us through our secure submission portal."
+      name:["Comprehensive","Review"],
+      des:"Share your resume with us l."
     },
     {
-      name:"Submit your name",
-      des:"Share your resume with us through our secure submission portal."
+      name:["Detailed","Feedback"],
+      des:"Share your resume with us through our secure submissthrough our secure submission portathrough our secure submission portathrough our secthrough our secure submission portathrough our secure submission portaure submission portaion portal."
     },
     {
-      name:"Submit your name",
+      name:["No","Obligation"],
       des:"Share your resume with us through our secure submission portal."
     }
   ]
@@ -33,11 +34,13 @@ export default function index() {
             {data.map((item,index) => (
               <div key={index} className={s.item}>
                 <div className={s.childItem}>
-                  <span>0{index+1}</span>
-                  <h3>{item.name}</h3>
-                  <p>{item.des}</p>
+                  <span className='h2_style'>0{index+1}</span>
+                  <div className={s.more}>
+                    <h3 >{item.name[0]}<br/>{item.name[1]}</h3>
+                    <p>{item.des}</p>
+                  </div>
                 </div>
-               {/*  <div className={s.mask}></div> */}
+                <button className={s.icon}><IconArrow/></button>
               </div>
             ))}
             

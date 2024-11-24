@@ -16,6 +16,11 @@
     font-size: 3.6vw;
     font-weight: 800;
     letter-spacing: 0vw;
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: .5vw;
 }
 @media (max-width:472px) {}
 

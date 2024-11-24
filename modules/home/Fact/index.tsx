@@ -1,9 +1,13 @@
 import React from 'react'
 import s from './style.module.css'
 import Tag from '@Components/Tag'
+import BackgroundCrossIcon from '@/components/BackgroundCrossIcon'
+import BackgroundLineCross from '@/components/BackgroundLineCross'
 export default function index() {
     return (
         <section className={s.factSection}>
+            <BackgroundCrossIcon/>
+            <BackgroundLineCross/>
             <div className='container'>
                 <div className={s.factSectionWrap}>
                     <div className={s.part1}>
