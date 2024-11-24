@@ -1,43 +1,38 @@
 
-import React from 'react'
+import React, { memo } from 'react'
 import s from './style.module.css'
-import Link from 'next/link'
-import ButtonUnderline from '@/interactive/Button/Underline'
-import {Lang_en} from '@Constants/data_all'
-import { usePathname,useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
+import useStoreTimeline from '@/store/useStoreTimeline';
 
-import { useGSAP } from "@gsap/react";
-import gsap from 'gsap';
-import { exitPageTransition } from '@/layouts/PageLoader/useTransitionPage'
+function NavbarSection({ content }: { content?: any }) {
+  console.log("NavbarSection")
+  const pathName = usePathname()
+  const router = useRouter()
+  const timelineStore = useStoreTimeline((state) => state.timelines);
 
+  const handleRedirect = (e: any) => {
 
-gsap.registerPlugin(useGSAP);
-export default function index({content}:{content?:any}) {
- console.log("Re-render???")
- const pathName = usePathname()
- const router = useRouter()
- const handleRedirect = (e:any) => {
-    const targetDom = document.getElementById(`${pathName.replace(/\//g, "")}`)
     const targetLink = e.currentTarget.getAttribute("data-link")
-    exitPageTransition({
-      targetDom:targetDom,
-      router:router,
-      targetLink:targetLink
-    })
-   
- }
+    if (pathName === targetLink) return
+  
+    timelineStore['pageLoaderExit']?.play().eventCallback("onComplete", () => {
+      router.push(targetLink)
+    });
+  }
+
   return (
     <section className={s.navbarSection}>
-        <div className='layout'>
-          <div className={s.logo}>
-            <h2><Link href="/" >A25 studio</Link></h2>
-          </div>
-          <ul className={s.listItemNav}>
-            <li><button onClick={handleRedirect} data-link="/services">Services</button></li>
-            <li><button onClick={handleRedirect} data-link="/aboutus">About us</button></li>
-            <li><button onClick={handleRedirect} data-link="/contact">Contact</button></li>
-          </ul>
+      <div className='layout'>
+        <div className={s.logo}>
+          <h2><button onClick={handleRedirect} data-link="/">A25 studio</button></h2>
         </div>
+        <ul className={s.listItemNav}>
+          <li><button onClick={handleRedirect} data-link="/services">Services</button></li>
+          <li><button onClick={handleRedirect} data-link="/aboutus">About us</button></li>
+          <li><button onClick={handleRedirect} data-link="/contact">Contact</button></li>
+        </ul>
+      </div>
     </section>
   )
 }
+export default memo(NavbarSection)

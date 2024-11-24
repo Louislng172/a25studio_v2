@@ -1,8 +1,9 @@
 'use client';
 
 
-import React, { PropsWithChildren, ReactElement, useRef } from 'react';
+import React, { PropsWithChildren, ReactElement, useEffect, useRef } from 'react';
 import useParagraphChars from './useParagraphChars';
+import useStoreStateApp from '@/store/useStoreStateApp';
 
 
 
@@ -25,7 +26,7 @@ export default function ParagraphChars({
   threshold,
 }: ParagraphLineMaskProps): ReactElement {
   const refContent = useRef<typeRef>(null);
-
+  const {isCompleteTransitionPage} = useStoreStateApp()
   const { initAnimation, playAnimation } = useParagraphChars({
     refContent,
     delayTrigger,
@@ -33,8 +34,13 @@ export default function ParagraphChars({
     isObserver,
     typeEff,
   });
+  console.log("===========ParagraphChars")
   initAnimation()
-  playAnimation()
+ 
+  useEffect(() => {
+    if(isCompleteTransitionPage) playAnimation()
+  },[isCompleteTransitionPage])
+
   if (!React.isValidElement(children)) {
     return <div>Error: Invalid children element</div>;
   }

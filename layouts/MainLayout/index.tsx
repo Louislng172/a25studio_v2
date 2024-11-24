@@ -6,7 +6,6 @@ import FooterSection from '@Modules/common/FooterSection'
 import {  ReactNode } from 'react'
 import LenisScroller from '@/components/Lenis'
 import Header from '../Header'
-import PageLoader from '../PageLoader'
 export default function MainLayout({ children }: { children: ReactNode }) {
 
 
@@ -18,9 +17,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
       <main>
         <LenisScroller>
           {children}
-          <PageLoader/>
         </LenisScroller>
-     
       </main>
 
       <FooterSection/>

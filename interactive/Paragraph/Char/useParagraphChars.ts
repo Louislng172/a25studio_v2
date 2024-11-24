@@ -28,9 +28,9 @@ export default function useParagraphChars({
     refTarget: refContent,
     types: 'words,chars',
   });
-
+  console.log("===========useParagraphChars")
   const { contextSafe } = useGSAP({ scope: refContent });
-console.log(splitter)
+
   const initAnimation = contextSafe(() => {
  
     splitter?.chars &&
@@ -44,7 +44,8 @@ console.log(splitter)
     const delay = getDelay({ refContentCurrent: refContent.current, delayEnter, delayTrigger });
 
     gsap.to(splitter?.chars, {
-         y :"0%"
+         y :"0%",
+         delay:delayEnter
       });
   });
   return { initAnimation, playAnimation };
