@@ -5,16 +5,16 @@ import ImagePreload from '@/components/ImagePreload'
 export default function Advantages() {
 const data = [
     {
-        name: "Comprehensive Expertise",
-        des: "We blend immigration expertise with aviation industry focus, offering specialized legal and sector-specific guidance."
+        name: "20STUDIO Fashion Agency",
+        des: "Phát triển Website - Thiết kế hình ảnh"
     },
     {
-        name: "Comprehensive Expertise",
-        des: "We blend immigration expertise with aviation industry focus, offering specialized legal and sector-specific guidance."
+        name: "Namvietlaw",
+        des: "Thiết kế Website - Phát triển ứng dụng"
     },
     {
-        name: "Comprehensive Expertise",
-        des: "We blend immigration expertise with aviation industry focus, offering specialized legal and sector-specific guidance."
+        name: "LuongStudio",
+        des: "Phát triển Website - Thiết kế hình ảnh"
     },
     {
         name: "Comprehensive Expertise",
